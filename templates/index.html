@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>League of Films</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <link rel="icon" href="{% static 'media/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+<div class="container">
+    <video preload="auto" autoplay loop muted>
+        <source src="{% static '/media/video/3.mp4' %}" type="video/mp4">
+        Video not supported
+    </video>
+</div>
+<nav>
+    <ul>
+        <li><a href="#" class="about-marker active">REZERVARI</a></li>
+        <li><a href="#" class="team-marker">FILME</a></li>
+        <li><a href="#" class="gallery-marker">PROGRAM</a></li>
+        <li><a href="#" class="testimonials-marker">DESORE NOI</a></li>
+        <li><a href="#" class="contact-marker">CONTACT</a></li>
+    </ul>
+</nav>
+<div class="content">
+    <span src="media/images/logo.png"></span>
+    <h1>League of Films</h1>
+    <p>Rezervă acum bilet!</p>
+</div>
+<div class="footer">
+    <p>Confidențialitate | Termeni și condiții | Contact</p>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/index.js"></script>
+</body>
+
+</html>
