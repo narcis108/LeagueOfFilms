@@ -21,4 +21,5 @@ from filme_app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^lof', views.index),
+    url(r'^$',views.index),
 ]
